@@ -7,24 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F728E872208361C8007F6942 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F728E871208361C8007F6942 /* main.cpp */; };
+		F728E872208361C8007F6942 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F728E871208361C8007F6942 /* Main.cpp */; };
+		F728E88020837FF2007F6942 /* WeightedQUPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F728E87E20837FF2007F6942 /* WeightedQUPC.cpp */; };
+		F728E8822083A5A7007F6942 /* tinyUF.txt in Copy Files */ = {isa = PBXBuildFile; fileRef = F728E881208384ED007F6942 /* tinyUF.txt */; };
+		F728E8842083B9C0007F6942 /* mediumUF.txt in Copy Files */ = {isa = PBXBuildFile; fileRef = F728E8832083B9B8007F6942 /* mediumUF.txt */; };
+		F728E8862083BB20007F6942 /* largeUF.txt in Copy Files */ = {isa = PBXBuildFile; fileRef = F728E8852083BB1A007F6942 /* largeUF.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F728E86C208361C8007F6942 /* CopyFiles */ = {
+		F728E86C208361C8007F6942 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = TestData/DynamicConnectivity;
+			dstSubfolderSpec = 7;
 			files = (
+				F728E8862083BB20007F6942 /* largeUF.txt in Copy Files */,
+				F728E8842083B9C0007F6942 /* mediumUF.txt in Copy Files */,
+				F728E8822083A5A7007F6942 /* tinyUF.txt in Copy Files */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F728E86E208361C8007F6942 /* DSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA; sourceTree = BUILT_PRODUCTS_DIR; };
-		F728E871208361C8007F6942 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F728E871208361C8007F6942 /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
+		F728E87E20837FF2007F6942 /* WeightedQUPC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WeightedQUPC.cpp; path = "Dynamic Connectivity/WeightedQUPC.cpp"; sourceTree = "<group>"; };
+		F728E87F20837FF2007F6942 /* WeightedQUPC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = WeightedQUPC.hpp; path = "Dynamic Connectivity/WeightedQUPC.hpp"; sourceTree = "<group>"; };
+		F728E881208384ED007F6942 /* tinyUF.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tinyUF.txt; path = TestData/DynamicConnectivity/tinyUF.txt; sourceTree = "<group>"; };
+		F728E8832083B9B8007F6942 /* mediumUF.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mediumUF.txt; path = TestData/DynamicConnectivity/mediumUF.txt; sourceTree = "<group>"; };
+		F728E8852083BB1A007F6942 /* largeUF.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = largeUF.txt; path = TestData/DynamicConnectivity/largeUF.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +54,8 @@
 		F728E865208361C8007F6942 = {
 			isa = PBXGroup;
 			children = (
-				F728E870208361C8007F6942 /* DSA */,
+				F728E87820837EBA007F6942 /* TestData */,
+				F728E870208361C8007F6942 /* Problems */,
 				F728E86F208361C8007F6942 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +68,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F728E870208361C8007F6942 /* DSA */ = {
+		F728E870208361C8007F6942 /* Problems */ = {
 			isa = PBXGroup;
 			children = (
-				F728E871208361C8007F6942 /* main.cpp */,
+				F728E87D20837FA0007F6942 /* Dynamic Connectivity */,
+				F728E871208361C8007F6942 /* Main.cpp */,
 			);
+			name = Problems;
 			path = DSA;
+			sourceTree = "<group>";
+		};
+		F728E87820837EBA007F6942 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				F728E87920837EC6007F6942 /* Dynamic Connectivity */,
+			);
+			name = TestData;
+			sourceTree = "<group>";
+		};
+		F728E87920837EC6007F6942 /* Dynamic Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				F728E8852083BB1A007F6942 /* largeUF.txt */,
+				F728E8832083B9B8007F6942 /* mediumUF.txt */,
+				F728E881208384ED007F6942 /* tinyUF.txt */,
+			);
+			name = "Dynamic Connectivity";
+			sourceTree = "<group>";
+		};
+		F728E87D20837FA0007F6942 /* Dynamic Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				F728E87E20837FF2007F6942 /* WeightedQUPC.cpp */,
+				F728E87F20837FF2007F6942 /* WeightedQUPC.hpp */,
+			);
+			name = "Dynamic Connectivity";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,7 +114,7 @@
 			buildPhases = (
 				F728E86A208361C8007F6942 /* Sources */,
 				F728E86B208361C8007F6942 /* Frameworks */,
-				F728E86C208361C8007F6942 /* CopyFiles */,
+				F728E86C208361C8007F6942 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -119,7 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F728E872208361C8007F6942 /* main.cpp in Sources */,
+				F728E872208361C8007F6942 /* Main.cpp in Sources */,
+				F728E88020837FF2007F6942 /* WeightedQUPC.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
